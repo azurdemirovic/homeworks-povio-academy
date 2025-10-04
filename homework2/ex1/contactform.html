@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Contact Form</h1>
+      <form>
+        <fieldset>
+          <legend>Your Name</legend>
+
+          <input
+            type="text"
+            name="fname"
+            placeholder="First Name"
+            aria-label="First Name"
+          />
+
+          <input
+            type="text"
+            name="lname"
+            placeholder="Last Name"
+            aria-label="Last Name"
+          />
+        </fieldset>
+
+        <label
+          >Your Email
+          <input
+            type="email"
+            name="email"
+            placeholder="e.g. hello@contact.net"
+          />
+        </label>
+
+        <fieldset>
+          <legend>Phone *</legend>
+
+          <input
+            type="tel"
+            name="countrycode"
+            placeholder="###"
+            aria-label="Country code"
+            maxlength="3"
+            required
+          />
+          <input
+            type="tel"
+            name="first3digits"
+            placeholder="###"
+            aria-label="First three digits"
+            maxlength="3"
+            required
+          />
+          <input
+            type="tel"
+            name="last4digits"
+            placeholder="####"
+            aria-label="Last four digits"
+            maxlength="4"
+            required
+          />
+        </fieldset>
+        <label
+          >Message subject*<select name="subject" required>
+            <option value="other">Other</option>
+            <option value="other2">Other2</option>
+          </select></label
+        >
+        <label
+          >Your message*
+          <textarea rows="5" name="message" required> </textarea>
+        </label>
+        <label
+          >Verification *
+
+          <label
+            >I am not a robot<input
+              type="checkbox"
+              name="verification"
+              required
+          /></label>
+        </label>
+
+        <button type="submit">Submit Form</button>
+      </form>
+    </main>
+  </body>
+</html>

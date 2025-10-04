@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Contact Form</h1>
+      <form>
+        <fieldset>
+          <legend>Your Name</legend>
+
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="First Name"
+            aria-label="First Name"
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Last Name"
+            aria-label="Last Name"
+          />
+        </fieldset>
+
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="e.g. hello@contact.net"
+        />
+
+        <fieldset>
+          <legend>Phone *</legend>
+
+          <label for="countrycode">Country Code</label>
+          <input
+            type="tel"
+            id="countrycode"
+            name="countrycode"
+            placeholder="###"
+            maxlength="3"
+            required
+          />
+
+          <label for="first3digits">First 3 digits</label>
+          <input
+            type="tel"
+            id="first3digits"
+            name="first3digits"
+            placeholder="###"
+            maxlength="3"
+            required
+          />
+
+          <label for="last4digits">Last 4 digits</label>
+          <input
+            type="tel"
+            id="last4digits"
+            name="last4digits"
+            placeholder="####"
+            maxlength="4"
+            required
+          />
+        </fieldset>
+
+        <label for="subject">Message subject*</label>
+        <select id="subject" name="subject" required>
+          <option value="other">Other</option>
+          <option value="other2">Other2</option>
+        </select>
+
+        <label for="message">Your message*</label>
+        <textarea id="message" rows="5" name="message" required></textarea>
+
+        <fieldset>
+          <legend>Verification *</legend>
+          <input
+            type="checkbox"
+            id="verification"
+            name="verification"
+            required
+          />
+          <label for="verification">I am not a robot</label>
+        </fieldset>
+
+        <button type="submit">Submit Form</button>
+      </form>
+    </main>
+  </body>
+</html>
