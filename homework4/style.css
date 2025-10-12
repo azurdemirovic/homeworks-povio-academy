@@ -10,3 +10,15 @@ h1 {
 p {
   font-size: 18px;
 }
+button {
+  font-size: 14px;
+  background-color: rgb(238, 238, 58);
+  border: none;
+  padding: 5px 2px;
+}
+
+button:hover {
+  background-color: black;
+  color: rgb(238, 238, 58);
+  text-decoration: underline;
+}
