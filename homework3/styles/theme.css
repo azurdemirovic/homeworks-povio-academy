@@ -1,19 +1,19 @@
 @font-face {
-  font-family: "Figtree Medium";
+  font-family: "Figtree";
   src: url("../assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
 }
 
 @font-face {
-  font-family: "Figtree ExtraBold";
+  font-family: "Figtree";
   src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
 }
 
 :root {
-  --font-medium: "Figtree Medium", sans-serif;
-  --font-extrabold: "Figtree ExtraBold", sans-serif;
+  --font-family: "Figtree", sans-serif;
 
   --color-background: #f4d04e;
-
   --color-card-background: #ffffff;
   --color-card-tag-background: #f4d04e;
   --color-card-tag-text: #111111;
@@ -25,35 +25,40 @@
 }
 
 .card-tag-text {
-  font-family: var(--font-extrabold);
+  font-family: var(--font-family);
+  font-weight: 800;
   font-size: clamp(0.75rem, 2vw, 0.875rem);
   line-height: 150%;
   color: var(--color-card-tag-text);
 }
 
 .card-date-text {
-  font-family: var(--font-medium);
+  font-family: var(--font-family);
+  font-weight: 500;
   font-size: clamp(0.75rem, 2vw, 0.875rem);
   line-height: 150%;
   color: var(--color-card-date-text);
 }
 
 .card-main-heading-text {
-  font-family: var(--font-extrabold);
+  font-family: var(--font-family);
+  font-weight: 800;
   font-size: clamp(1.25rem, 4vw, 1.5rem);
   line-height: 150%;
   color: var(--color-card-main-heading-text);
 }
 
 .card-text {
-  font-family: var(--font-medium);
+  font-family: var(--font-family);
+  font-weight: 500;
   font-size: clamp(0.875rem, 2.5vw, 1rem);
   line-height: 150%;
   color: var(--color-card-text);
 }
 
 .card-username-text {
-  font-family: var(--font-extrabold);
+  font-family: var(--font-family);
+  font-weight: 800;
   font-size: clamp(0.75rem, 2vw, 0.875rem);
   line-height: 150%;
   color: var(--color-card-username-text);

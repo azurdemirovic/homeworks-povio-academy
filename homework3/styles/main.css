@@ -31,7 +31,7 @@ html {
   box-sizing: border-box;
 }
 
-#illustration-img {
+.illustration-img {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -45,8 +45,8 @@ html {
   gap: 12px;
 }
 
-.card-main-heading-text:hover{
-    color: var(--color-background);
+.card-main-heading-text:hover {
+  color: var(--color-background);
 }
 
 .card-tag {
@@ -55,10 +55,11 @@ html {
   border-radius: 4px;
 }
 
-#user-icon {
+.user-icon {
   width: 32px;
   height: 32px;
 }
+
 .user-section {
   display: flex;
   align-items: center;
@@ -66,7 +67,7 @@ html {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 .attribution a {
@@ -74,5 +75,5 @@ html {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
