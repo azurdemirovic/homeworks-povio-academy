@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Func/DOM</title>
     <script defer src="scripts/functional.js"></script>
     <script defer src="scripts/DOM.js"></script>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="task">
+      <button id="task-1-button">Generate random num.</button>
+      <p id="task-1-paragraph">XXXXXXXXXX</p>
+    </div>
+
+    <div class="task">
+      <button id="task-2-button">Hide Image</button>
+      <img
+        id="task-2-image"
+        class="task-2-image"
+        src="assets/povio.jpg"
+        alt="Image of povio logo."
+        width="200"
+      />
+    </div>
+
+    <div id="div-with-background" class="task with-background">
+      <button id="task-3-button">Click me to change background</button>
+    </div>
+
+    <div class="task">
+      <button id="task-4-button">Add li to the list</button>
+      <input type="text" id="task-4-input" />
+    </div>
+    <ul id="task-4-ul"></ul>
+
+    <div class="task">
+        <button id="task-5-button">Increment counter</button>
+        <p id="task-5-paragraph" class="task-5-paragraph">0</p>
+    </div>
+  </body>
 </html>
