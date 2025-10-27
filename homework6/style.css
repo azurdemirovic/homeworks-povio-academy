@@ -1,0 +1,91 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.loading {
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+}
+
+.error {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  padding: 15px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.quote-content {
+  max-width: 700px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.6s ease;
+}
+
+.quote-text {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0 0 15px 0;
+  font-style: italic;
+}
+
+.quote-text::before {
+  content: '"';
+}
+
+.quote-text::after {
+  content: '"';
+}
+
+.quote-author {
+  font-size: 16px;
+  color: #666;
+  text-align: right;
+  margin: 0;
+}
+
+.quote-author::before {
+  content: '— ';
+}
+
+.new-quote-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-quote-btn:hover {
+  background-color: #555;
+}
+
+.hidden {
+  display: none;
+}
+
+
